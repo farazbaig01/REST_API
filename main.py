@@ -6,6 +6,6 @@ app = FastAPI()
 def read_root():
     return {"status" : "online", "message": "Python API is running!"}
 
-@app.get("/healthy")
+@app.get("/health")
 def health_check():
     return {"status": "healthy"}
